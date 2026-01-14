@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landslide Early Warning Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<header class="topbar">
+    <div>
+        <h2>Landslide Early Warning System</h2>
+        <p>📍 Location: Waiting for GPS...</p>
+    </div>
+    <div class="status">System Initializing</div>
+</header>
+
+<main class="container">
+
+    <section class="cards">
+        <div class="card">
+            <h4>Rainfall</h4>
+            <p id="rain">Waiting...</p>
+        </div>
+
+        <div class="card">
+            <h4>Soil Moisture</h4>
+            <p id="moisture">Waiting...</p>
+        </div>
+
+        <div class="card">
+            <h4>Vibration</h4>
+            <p id="vibration">Waiting...</p>
+        </div>
+
+        <div class="card">
+            <h4>Water Level</h4>
+            <p id="water">Waiting...</p>
+        </div>
+    </section>
+
+    <section class="grid">
+        <div class="panel">
+            <h3>Weather Status</h3>
+            <div class="weather-icon">⛅</div>
+            <p id="weather">Waiting for weather data...</p>
+        </div>
+
+        <div class="panel">
+            <h3>Risk Analysis</h3>
+            <canvas id="riskChart"></canvas>
+            <p id="riskText">Risk: Waiting...</p>
+        </div>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
